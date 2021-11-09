@@ -29,7 +29,7 @@ bot.loadPlugin(cmd)
 
 bot.on('login',function(){
 	console.log("Logged In")
-	bot.chat("/register CreativeManSmp CreativeManSmp");
+	bot.chat("/login CreativeManSmp");
 	
 });
 
