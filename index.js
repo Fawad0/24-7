@@ -28,7 +28,7 @@ bot.loadPlugin(cmd)
 
 
 bot.on('login',function(){
-	console.log("Logged In")
+	console.log("/register Fawad Fawad")
 	bot.chat("hello");
 });
 
