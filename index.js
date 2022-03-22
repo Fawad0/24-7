@@ -6,7 +6,7 @@ let data = JSON.parse(rawdata);
 var lasttime = -1;
 var moving = 0;
 var connected = 0;
-var actions = [ 'forward', 'back', 'left', 'right', 'jump']
+var actions = [ 'forward', 'back', 'left', 'right']
 var lastaction;
 var pi = 3.14159;
 var moveinterval = 2; // 2 second movement interval
@@ -29,13 +29,13 @@ bot.loadPlugin(cmd)
 
 bot.on('login',function(){
 	console.log("Logged In")
-	bot.chat("/login Fawwad#1");
+	bot.chat("/login muskan@123");
 });
 
 bot.on('time', function(time) {
 	if(nightskip == "true"){
 	if(bot.time.timeOfDay >= 13000){
-	bot.chat('')
+	bot.chat('/time set day')
 	}}
     if (connected <1) {
         return;
